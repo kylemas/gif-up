@@ -1,0 +1,22 @@
+body {
+	background-color: #fffaea;
+}
+
+#gif {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+	display: block;
+}
+
+.container {
+	padding-left: 22%;
+	padding-right: 22%;
+}
+
+#quote{
+	padding-top: 5px;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 20px;
+}
