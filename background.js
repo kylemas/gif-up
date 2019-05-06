@@ -28,6 +28,31 @@ let quotes = [
 	'If you want to be happy, be. - Leo Tolstoy'
 ];
 
+let colors = [
+	'#FFB5E8',
+	'#F3D1DC',
+	'#F6A7C1',
+	'#FCF0CF',
+	'#FDCF76',
+	'#89AEB2',
+	'#F1E0B0',
+	'#F1CDB0',
+	'#E7CFC8',
+	'#D2A3A9',
+	'#E6DCE5',
+	'#EBC3C1',
+	'#ECAD8F',
+	'#C8B4BA',
+	'#F3DDB3',
+	'#C1CD97',
+	'#E18D96',
+	'#38908F',
+	'#B2EBE0',
+	'#FFBFA3',,
+	'#ECBE7A',
+	'#F9E1E0'
+]
+
 
 function gifPicker(){
 	let length = gifs.length;
@@ -46,22 +71,15 @@ function quotePicker(){
 }
 
 function randomColor(){
-	//pick a "red" from 0 - 255
-	var r = Math.floor(Math.random() * 256);
-	//pick a "green" from  0 -255
-	var g = Math.floor(Math.random() * 256);
-	//pick a "blue" from  0 -255
-	var b = Math.floor(Math.random() * 256);
-	return "rgb(" + r + ", " + g + ", " + b + ")";
-}
-
-function changeColor(){
-	var newColor = randomColor();
+	let length = colors.length;
+	let newIndex = Math.floor(Math.random() * length);
+	let newColor = colors[newIndex];
 	document.body.style.backgroundColor = newColor;
-}
 
+
+}
 window.onload = function(){
 	gifPicker();
 	quotePicker();
-	changeColor();
+	randomColor();
 };
